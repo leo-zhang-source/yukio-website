@@ -1,6 +1,8 @@
 # Yukio 官网短入口
 
-网站入口：<https://leozhang8654.github.io/>
+当前对外分享入口：<https://is.gd/yukioapp>
+
+历史根地址入口：<https://leozhang8654.github.io/>
 
 此仓库通过 GitHub Pages 发布一个轻量跳转页，前往 <https://leozhang8654.github.io/yukio-website/>。原网站地址继续有效；角色素材、网页交互与正式网站源码统一维护在 [yukio-website](https://github.com/leozhang8654/yukio-website)。
 
