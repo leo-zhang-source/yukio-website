@@ -2,7 +2,7 @@
 
 雪绪与千夏的中英双语介绍网站，包含角色图鉴、十二种动作试玩、可拖动的网页伙伴、工作台截图与实际可用的下载入口。
 
-- 网站短入口：<https://leozhang8654.github.io/>
+- 网站分享入口：<https://is.gd/yukioapp>
 - 网站直达地址：<https://leozhang8654.github.io/yukio-website/>
 - 网站源码：<https://github.com/leozhang8654/yukio-website>
 - 桌面 App 与下载：<https://github.com/leozhang8654/yukio-desktop-pet>
@@ -27,7 +27,7 @@ npm run test:demo
 
 ## 发布与维护
 
-短入口由 [leozhang8654.github.io](https://github.com/leozhang8654/leozhang8654.github.io) 仓库维护，只负责跳转到本网站；网站内容继续在本仓库统一发布。两种地址均可使用。
+对外分享入口为 <https://is.gd/yukioapp>，含 Yukio 名称且不含个人账号名。它由 is.gd 跳转到本网站，打开后地址栏显示实际 GitHub Pages 地址。历史根地址入口继续保留；网站内容仍在本仓库统一发布。
 
 GitHub Pages 使用 `.github/workflows/pages.yml` 发布 `dist/`。推送到 `main` 后，GitHub Actions 会先校验 JavaScript、资源引用、拖拽物理和动作轮播，再发布同一提交的静态文件。失败时查看仓库 Actions；需要恢复时，回退对应源码提交并重新运行工作流。
 
