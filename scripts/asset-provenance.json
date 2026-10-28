@@ -1,0 +1,243 @@
+{
+  "commit": "78b6257bf4f04f3e90b13507a91025a7a4e1b0de",
+  "files": [
+    {
+      "source": "docs/readme/desk.gif",
+      "file": "assets/desk.gif",
+      "bytes": 789593,
+      "gitBlobSha": "be4387abb925bb41086821d86b3836b8698390cc",
+      "sha256": "cbe65b5d4e97365cf473e4fb203b9235f94f6b491679d3f9d086b5413988f23a"
+    },
+    {
+      "source": "docs/readme/drag.gif",
+      "file": "assets/drag.gif",
+      "bytes": 1131073,
+      "gitBlobSha": "c3a5aa6423b9638c42b3315dfed0e6dd19c8a8c8",
+      "sha256": "a389bdde6376343191e00881e09f182cbe68d96f384cbb17c60148c3a9d68684"
+    },
+    {
+      "source": "docs/readme/workbench-current.png",
+      "file": "assets/workbench-current.png",
+      "bytes": 96526,
+      "gitBlobSha": "99ef4baa728dc93b02de416fa864154d3793d2d4",
+      "sha256": "31b9dbb6c8074131ed9d321a6b6ece30c49b631ceec63c80fdc4642a993d8c38"
+    },
+    {
+      "source": "docs/readme/workbench-deep.png",
+      "file": "assets/workbench-deep.png",
+      "bytes": 80059,
+      "gitBlobSha": "4a2042722b105fd6e92d097839f03c02d2e4df3b",
+      "sha256": "7410d13c1844f2ed2f49a54a860b360ab6643d0e8747e731e25f15d2d623e755"
+    },
+    {
+      "source": "docs/readme/workbench-history.png",
+      "file": "assets/workbench-history.png",
+      "bytes": 71255,
+      "gitBlobSha": "b588ac5d19f506238c0345659f189d703b3987ae",
+      "sha256": "192dc17770bd44904056a046a4cd0a3b4bcc908257967be42398748106ae3c79"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/base/held@2x.png",
+      "file": "assets/yukio-held.png",
+      "bytes": 80226,
+      "gitBlobSha": "be46b4b173f0e45f17d414f2a9f6d822060af602",
+      "sha256": "c8a7648ce5f9d0a3e76d0cc96f61343310003c004a6b07f8638f0e5db16051fc"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/base/neutral.png",
+      "file": "assets/yukio-neutral.png",
+      "bytes": 32436,
+      "gitBlobSha": "1c41bab6c2da4510f842d22d6f1ba19b38cb0ceb",
+      "sha256": "763d791ced4cd7ac69fd3a13f0cd8da3ebe62841ae7b5e6b43bd585cc0d07a1f"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/base/held.png",
+      "file": "assets/qianxia-held.png",
+      "bytes": 186420,
+      "gitBlobSha": "cdedea431a5c6ce528521e0144699462c68770ef",
+      "sha256": "74e35643af95cf5dd424e206ff90087bd7e5cd07d07b48e7981304254bf343af"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/motion.json",
+      "file": "assets/motion.json",
+      "bytes": 176999,
+      "gitBlobSha": "349ec5fcdccba7ed114df8bc75ac7b456a1e28d1",
+      "sha256": "2102b0ed2e0b789b4020b375b2ba8f868c13f375b0f19ec506ddab52ca9c5c60"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/motion.json",
+      "file": "assets/qianxia-motion.json",
+      "bytes": 101310,
+      "gitBlobSha": "87b46dfbf1012e46ed10703569ff3ce6d83696a0",
+      "sha256": "22e2b2967eae7926d7a30fc5c2bf41861b29bb89829c8bc7aac777312b191ee6"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/idle.webp",
+      "file": "assets/motion/idle.webp",
+      "bytes": 314030,
+      "gitBlobSha": "d9ddc5efcadaab4ce2c96e0cf13f7e163cffba2a",
+      "sha256": "da046537a17720ad2e79674f3379c96e7ca2111b64aa26db03583a21d72afc3d"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/idle.webp",
+      "file": "assets/qianxia/idle.webp",
+      "bytes": 1444320,
+      "gitBlobSha": "bd336012ea870f4991b33d9069afb088551b754c",
+      "sha256": "e64e88270190c77b9351e2e3a57b140723140da652c3621a09f29585e2eb5688"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/thinking.webp",
+      "file": "assets/motion/thinking.webp",
+      "bytes": 228800,
+      "gitBlobSha": "084fd562058f8ad37cc7dec9593a553428b9ed96",
+      "sha256": "6827867447257a8814a7a4fcfd49b31d100f682fb25a0a85c9df1e808ec5c392"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/thinking.webp",
+      "file": "assets/qianxia/thinking.webp",
+      "bytes": 313350,
+      "gitBlobSha": "b077407fb4d331d3564a625c28f5a40311592aa7",
+      "sha256": "59753a9e6a2833c11a502d7b26070c6ca7cf96943db6d5b4f5325aa228364e28"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/read_file.webp",
+      "file": "assets/motion/read_file.webp",
+      "bytes": 1176922,
+      "gitBlobSha": "222a1653a6ec143bd426cbd117392d6601232405",
+      "sha256": "d965f6284e32e3678f140929d724e663b1c9e77516e33f9dc12db42ddab99416"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/read_file.webp",
+      "file": "assets/qianxia/read_file.webp",
+      "bytes": 344098,
+      "gitBlobSha": "e1119cd8d805692147d587c0b611e28a32222083",
+      "sha256": "d69c5aec6c2bdab5fd40c6655521e492bf619a0db1225c849164ed408b1e1983"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/write_file.webp",
+      "file": "assets/motion/write_file.webp",
+      "bytes": 1327306,
+      "gitBlobSha": "6998aa1f5450c2b3648165c372259ac41a9b75ed",
+      "sha256": "2e16811d17d9352cbee12255b9554564d6297eeaf49cbb7d5aa089ec6560f42a"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/write_file.webp",
+      "file": "assets/qianxia/write_file.webp",
+      "bytes": 318788,
+      "gitBlobSha": "6ce983ed58c8ca26d9c4c264759f6abe6e3bb0fa",
+      "sha256": "6ad5c60a306896113040f94e499186bdabd9ae68de2d637089ca2558d09af5cf"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/verify.webp",
+      "file": "assets/motion/verify.webp",
+      "bytes": 796798,
+      "gitBlobSha": "a526682f5643f42273f85dbea6a4470271565ef8",
+      "sha256": "280daf9a91a599505ed8be5e34bf125fa2a641201565ef6570e2bb21a0cc4c1a"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/verify.webp",
+      "file": "assets/qianxia/verify.webp",
+      "bytes": 739700,
+      "gitBlobSha": "491b50a6ffc1d36e574d43c5f344d62c76d458db",
+      "sha256": "0dc9e976f93a7f442e7c01c30de17d89694dd548f6567d0ac59104082b4d3c7c"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/read_web.webp",
+      "file": "assets/motion/read_web.webp",
+      "bytes": 696014,
+      "gitBlobSha": "0886032e2724708a5be2393c0ce22e486fbfceeb",
+      "sha256": "90346f3fce87b4dfc1da7bed54b0a9ff6775909de54131b6c74f9a4ee27c1c97"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/read_web.webp",
+      "file": "assets/qianxia/read_web.webp",
+      "bytes": 500734,
+      "gitBlobSha": "f1941dbe947680c345c27b890afa00af8db651c3",
+      "sha256": "6923b535d04c03d43c8d2c4fa03c9bd4fc80e367421f8a0c6522750b94e11f99"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/view_image.webp",
+      "file": "assets/motion/view_image.webp",
+      "bytes": 2035992,
+      "gitBlobSha": "28d7d06ae47184a78322bdc2562735a9866bd16e",
+      "sha256": "2984565876751408ad229943dea9f139f3736b2335750984bee2b5cc5135377f"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/view_image.webp",
+      "file": "assets/qianxia/view_image.webp",
+      "bytes": 1080642,
+      "gitBlobSha": "817600b34b44a90d032c5ebabcb76233aec4f209",
+      "sha256": "a6e6bae21517cafc880434e66f0cb3935d9d5516110df3aa279e18f215c2a322"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/respond.webp",
+      "file": "assets/motion/respond.webp",
+      "bytes": 739912,
+      "gitBlobSha": "3bdd5c3ab5fb7aab8972e80377a7458fec3abd71",
+      "sha256": "e65034df420acee0103bc89675c02dac368d3d84c621b868bbd60c62cd25be7e"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/respond.webp",
+      "file": "assets/qianxia/respond.webp",
+      "bytes": 145032,
+      "gitBlobSha": "10aef690be6dd3758a250cb1d9ea9c90449a27ab",
+      "sha256": "861c7325ca55bea343c97e446f67aa88bd468e7d6eb5feeb0a40268b8e8e02aa"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/task_complete.webp",
+      "file": "assets/motion/task_complete.webp",
+      "bytes": 395016,
+      "gitBlobSha": "418b09b3d4188f968a449287bb6d35343642ade0",
+      "sha256": "bfeb053a23e2c91f71b96007881e7d33d0b13c09c0df8982c7c188f611083e90"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/task_complete.webp",
+      "file": "assets/qianxia/task_complete.webp",
+      "bytes": 118534,
+      "gitBlobSha": "0c3b41fa0c010232f7f3b1e6a4a71ee816abfa4e",
+      "sha256": "a63e8abf3f1dc4841d22722e533da1f689ab5474989502ce4f3d7faa54ca6976"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/question_for_user.webp",
+      "file": "assets/motion/question_for_user.webp",
+      "bytes": 517916,
+      "gitBlobSha": "a07c454729c7c03771f91fbb91f0a8b7e415797c",
+      "sha256": "0ffc7768941bdba71839f40ce65ccfc3217ab3288be5442c68684cf28d9b75ba"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/question_for_user.webp",
+      "file": "assets/qianxia/question_for_user.webp",
+      "bytes": 349156,
+      "gitBlobSha": "e838824162f49239efff90df2b670204110f59b5",
+      "sha256": "3a9c4af3c9d39abe1a1f75f0d746ff0b6532d6cecd32b1d5b38698e07828d99b"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/default_work.webp",
+      "file": "assets/motion/default_work.webp",
+      "bytes": 1157242,
+      "gitBlobSha": "3ee93ca892de2caf1ae05cb90f5952f43bd00231",
+      "sha256": "46cb7bc1059633d0534494b56c390c0d818d2f8d357a7d710e35be52b347d863"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/default_work.webp",
+      "file": "assets/qianxia/default_work.webp",
+      "bytes": 805388,
+      "gitBlobSha": "46ee392b81a472413cd3fd03ef7633929a1133c0",
+      "sha256": "d3a9174f9ad7537474c928c0886cfa59080457eb58796ef7ddce8fede53f7af8"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/motion/failed.webp",
+      "file": "assets/motion/failed.webp",
+      "bytes": 71552,
+      "gitBlobSha": "06777b996bfa2967c132cc2c4f1bfc7b65dfee9f",
+      "sha256": "75bd9ab8a14a369097d137834d1881c4b12d94be3999272eaf63e4e1253e4987"
+    },
+    {
+      "source": "YukioPlayer/Resources/Assets/skins/qianxia/motion/failed.webp",
+      "file": "assets/qianxia/failed.webp",
+      "bytes": 150646,
+      "gitBlobSha": "3040a487b6c7d5d5ca9d0b3cbcaa184b67257c02",
+      "sha256": "4e9e7819a3c4eaa0ef7417e271398a6eb1ceaf0c3b0e7571430d073a28e632d3"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+.hero-pet{transition:opacity .13s ease,filter .2s}
+
+.hero-pet.is-carrying{opacity:0!important;animation:none!important;transition:none!important}
+.pet-is-held,.pet-is-held *{cursor:grabbing!important;user-select:none!important;-webkit-user-select:none!important}
+.drag-layer{position:fixed;inset:0;z-index:10000;pointer-events:none;overflow:visible;contain:layout style}
+.drag-puppet{position:absolute;left:0;top:0;transform-origin:50% 50%;will-change:transform,opacity;filter:drop-shadow(0 16px 8px #244a631f);pointer-events:none}
+.drag-layer[data-phase=settling] .drag-puppet{pointer-events:auto;cursor:grab;touch-action:none}
+.drag-puppet img{display:block;width:100%;height:100%;max-width:none;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.drag-shadow{position:absolute;top:0;left:0;height:15px;background:#2e5872;border-radius:50%;filter:blur(7px);will-change:transform,opacity;pointer-events:none}
+.pet-is-away .hero-world .hero-bubble,.pet-is-away .hero-world .pet-ground{opacity:0;pointer-events:none}
+.pet-companion{position:fixed;left:0;top:0;z-index:9999;pointer-events:none;contain:layout style}
+.pet-companion .hero-pet{left:0;top:0;bottom:auto;width:100%;height:100%;aspect-ratio:192/208;transform:none;pointer-events:auto}
+.pet-companion .hero-pet.greeting{animation:companion-greet .5s ease}
+.pet-companion.is-lifted .pet-companion-tools{visibility:hidden;pointer-events:none}
+.pet-companion-tools{position:absolute;bottom:-32px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:3px;max-width:calc(100vw - 20px);padding:3px 5px 3px 10px;background:#fffef7f5;border:1px solid #34496429;border-radius:9px;box-shadow:0 3px 9px #3449640d;pointer-events:auto;white-space:nowrap;color:#344964}
+.pet-companion-tools>span{max-width:155px;overflow:hidden;text-overflow:ellipsis;font-size:10px;line-height:1.5;margin-right:4px}
+.pet-companion-tools button{display:flex;align-items:center;justify-content:center;width:25px;height:25px;padding:4px;background:transparent;border-radius:5px;color:inherit;line-height:1}
+.pet-companion-tools button:hover{background:#dce8ef}
+.pet-companion-tools .play-icon{display:none}.pet-companion-tools .is-paused .pause-icon{display:none}.pet-companion-tools .is-paused .play-icon{display:block}
+@keyframes companion-greet{40%{transform:translateY(-6px)}70%{transform:translateY(1px)}}
+@media(prefers-reduced-motion:reduce){.hero-pet{transition:none}.drag-shadow{display:none}}
