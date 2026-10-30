@@ -1,2 +1,31 @@
-# leo-zhang-source.github.io
-Yukio — cute anime desktop companions, interactive character website and verified Mac download.
+# Yukio website
+
+A responsive Chinese / English character website for [Yukio](https://github.com/leozhang8654/yukio-desktop-pet). The current design uses pale ivory, deep navy, sky blue and light mint, with a toy-style character lineup, original animation, a random-pose button, a draggable companion, workbench screenshots and platform-specific downloads. The user explicitly requested public access for this revision.
+
+Run `npm run dev`, then open http://127.0.0.1:4173. No npm dependencies or build step are needed. The deployable website is `dist/`.
+
+Run `npm run check` to validate JavaScript, local assets and installer integrity. The `scripts/` directory records the pinned upstream commit and asset provenance.
+
+Public website: https://leo-zhang-source.github.io/yukio-website/. The homepage and download section now download the original Apple silicon Mac 5.3 ZIP directly from this website, with progress, cancellation, integrity checks and a save-again link. No GitHub login or working GitHub download is required. The shareable download entry is `/download.html?package=mac-arm64`; `/download.html#install` contains local installation instructions and the checksum. The Windows withdrawal recorded on 2026-10-27 is preserved, and Intel Mac is marked unavailable while its original download cannot be reached.
+
+The included Mac ZIP exactly matches the original published release asset: 76,480,917 bytes, SHA-256 `9f674e169273521b0033f0daff19a0af0ebdf0151ea45da702bdce7fd129c700`. To stay within static hosting's per-file size limit, five parts are hosted under `dist/downloads/`. `package-download.js` downloads them sequentially, verifies each SHA-256, and saves one ordinary ZIP. JavaScript is required; the link is a download entry page rather than a raw ZIP HTTP endpoint. This does not rebuild or modify the desktop app. Run `node scripts/prepare-download.mjs /path/to/original-release.zip` only with the exact original archive; it rejects mismatched inputs. `npm run check` reconstructs the full archive hash and validates all parts before publication.
+
+The animation gallery is a browser demo of the repository's original sprite sheets, played with the original frame sequence and durations. It does not connect to visitors' local AI sessions. The Mac workbench screenshots use the project's preset demo data.
+
+The homepage character can be carried across the entire browser viewport. The original held artwork is rendered in a body-level fixed layer, so the hero does not clip it. A small 2-D rigid-body solver applies a spring force at the grip: the same force moves the center of mass and turns the body, while gravity and damping produce lag, overshoot and a gradual settling swing. Pointer position and velocity come from the same time-stamped path. On release, local support and friction dissipate the existing momentum near the drop point; there is no automatic return to the hero. The original animated canvas then sits at that position, with no duplicate character, and can be picked up again without shrinking. Viewport contacts account for the rotated corners and exchange linear and angular momentum. This is whole-artwork rigid-body motion, not skeletal or cloth simulation. Pointer cancellation and losing focus place her locally. The small home button and Escape restore the original homepage position. Reduced-motion mode keeps direct upright dragging and immediate local placement, and suppresses automatic animation. Physics parameters and the fixed 1/240-second integration step live in `dist/pet-physics.js`; input, placement and rendering live in `dist/pet-carry.js`.
+
+The homepage and placed companion automatically cycle through all twelve original actions, allowing at least one complete source sequence per action. On placement the cycle starts with the original seated idle pose. The companion stays at the same viewport location while scrolling and changing actions. The pause/resume control remembers its state locally; automatic cycling stops while carried, offscreen or in a hidden tab, and resumes when appropriate. `dist/pet-demo.js` defines the order and timing. Run `npm run test:physics` and `npm run test:demo` for force, inertia, collision, local placement, action coverage and sequence-duration checks.
+
+The earlier illustrated sakura backdrop and its prompt are retained in the source history, but the current design presents the original character art on a simple toy-style stage. Fredoka and a subset of ZCOOL KuaiLe are self-hosted, with their OFL licenses in `dist/assets/`.
+
+Reference websites were inspected live: [Jellycat](https://jellycat.com/), [POP MART](https://www.popmart.com/us) and [SMISKI](https://smiski.com/e/). `DESIGN.md` records what informed this design. Their pictures, characters, logos and storefront mechanics are not reused. This remains a website for the actual desktop application, with actual release downloads.
+
+The active visual theme is `dist/taste.css`; locale-specific brand copy is in `dist/brand-copy.js`. Run `node scripts/sync-copy.mjs` after changing the brand copy to also update the initial Chinese HTML. The earlier pink theme remains in `dist/cute.css` for reference and is not loaded by the current page.
+
+The website is silent at the user's explicit request. Audio playback, sound controls and all sound files have been removed. Dragging, local placement, the twelve-action demo and visual interaction feedback remain available.
+
+The latest swing tuning uses more angular damping, a soft angular stop around 14 degrees and a safety cap around 22 degrees, retaining the same force-driven inertia with smaller motion.
+
+GitHub Pages publishes `dist/` using `.github/workflows/pages.yml` in the leo-zhang-source account. This site is separate from the desktop app checkout, so existing local animation work remains in place. Source and artwork attribution remain with the original Yukio project. No license is inferred from a public GitHub repository.
+
+2026-10-29 design revision uses the explicitly requested tasteskill v2 workflow: original character art becomes a collectible-character catalogue with a full-width poster hero, two character fields, a live action stage, real workbench screenshots and readable platform downloads. The former `style.css`, `cute.css` and `buddy.css` are historical styles and are not loaded. The exact direction, rationale, before/after findings and review are in `.taste-skill/`. The main page passed the actual three-width browser inspector with 0 FAIL; local browser interaction and a full installer download were tested.

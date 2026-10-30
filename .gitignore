@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+qa/
+*.tar.gz
+.sites-runtime/
+.taste-skill/before/
+.taste-skill/after/
+.taste-skill/round-*/

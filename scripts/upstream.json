@@ -1,0 +1,228 @@
+{
+  "repository": "https://github.com/leozhang8654/yukio-desktop-pet",
+  "commit": "78b6257bf4f04f3e90b13507a91025a7a4e1b0de",
+  "release": "v5.3",
+  "verifiedAt": "2026-10-27",
+  "assets": [
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/activities.json",
+      "sha": "f480c46674d741a83f8a100a86e9c8005ea3c3d3",
+      "size": 4363
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/computer-desk.png",
+      "sha": "d4b72acac10e580e4594e0cfe5cfefa38f938370",
+      "size": 45392
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/question_for_user.webp",
+      "sha": "80a139904fbdefaf1a3067afba87f3ca1881e19d",
+      "size": 27242
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/read_file.webp",
+      "sha": "3469388affc4e1b79a98520302b75ddfac13f779",
+      "size": 110604
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/read_web.webp",
+      "sha": "e59cf65da6369987d93d8add998ba2821c6a1b14",
+      "size": 99690
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/respond.webp",
+      "sha": "8ebe68e52e582965ba82e7515fe2047106f4b082",
+      "size": 98020
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/task_complete.webp",
+      "sha": "a9ec69b214cc78d47fda217f7e13a2e94d15a42b",
+      "size": 27442
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/thinking.webp",
+      "sha": "23e66ccbcf3b08c2081b56abddb2747ee3a587a4",
+      "size": 107898
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/verify.webp",
+      "sha": "230acc6b952fe7abe23077c726f928cb7c327e3d",
+      "size": 103816
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/view_image.webp",
+      "sha": "c35ba5d7597bc888d6b2f0615b39c2916f37211b",
+      "size": 111766
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/activities/write_file.webp",
+      "sha": "6b73948aa7da983d066ce766adf79e6a93c0d89a",
+      "size": 109030
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/base-animations.json",
+      "sha": "4de746d0e70472b1401af14a1f9672a7f767b5f5",
+      "size": 3970
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/calm-blink.webp",
+      "sha": "1e87b857e0dac598c3d623e4af1101347c437fb3",
+      "size": 72104
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/failed.webp",
+      "sha": "87e2b1cdf0aa66f4c65474d2e5f0b9281253d9b0",
+      "size": 47256
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/held.png",
+      "sha": "b5db62f765e1d91f43fd3b24bed4be6ecc195e6f",
+      "size": 32268
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/held@2x.png",
+      "sha": "be46b4b173f0e45f17d414f2a9f6d822060af602",
+      "size": 80226
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/idle.webp",
+      "sha": "03d084e9173688f85dc80e526d732ae3adab8ac5",
+      "size": 85826
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/look-directions-a.webp",
+      "sha": "23bfee9aa1acbfeafbfb2200f79caf0a935c9b17",
+      "size": 182944
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/look-directions-b.webp",
+      "sha": "d7b9c9217810149e0baaf8bc55505e269d14402c",
+      "size": 179684
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/native-review-desk.webp",
+      "sha": "c9894e52fc6f548dcd15f06e3cd3959deae66760",
+      "size": 34996
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/native-working-thinking.webp",
+      "sha": "dc188dc2fbee595d3843117bce92ce890e0e074f",
+      "size": 94324
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/neutral.png",
+      "sha": "1c41bab6c2da4510f842d22d6f1ba19b38cb0ceb",
+      "size": 32436
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/quiet-response.webp",
+      "sha": "da6ba2a7510239dd004a1d1f0c8c2424c1be617c",
+      "size": 47090
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/running-left.webp",
+      "sha": "da5e21a83ad5143de1b10ce91ac8b4a788a0f500",
+      "size": 198108
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/running-right.webp",
+      "sha": "9d6200b44568e4d1a8cfd4935cc0f574523c6b44",
+      "size": 195384
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/base/waiting.webp",
+      "sha": "0ef6b375c27f4b9cf7c147272b7c34c7122db24e",
+      "size": 49582
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/skins/qianxia/base/base-animations.json",
+      "sha": "433db773361a5a13c1189cf401d47b6a70da9b77",
+      "size": 324
+    },
+    {
+      "path": "YukioPlayer/Resources/Assets/skins/qianxia/base/held.png",
+      "sha": "cdedea431a5c6ce528521e0144699462c68770ef",
+      "size": 186420
+    },
+    {
+      "path": "docs/readme/assistant-windows.png",
+      "sha": "dbb053e7783335601f1d8fefbd5cebe982d8df77",
+      "size": 29091
+    },
+    {
+      "path": "docs/readme/bubble-zh.png",
+      "sha": "4a2489e1732e6a7c845c56316bef97cea28e8078",
+      "size": 751000
+    },
+    {
+      "path": "docs/readme/bubble.png",
+      "sha": "cb2d0e6ef405092d39f7c39b7da973b5a7282431",
+      "size": 746443
+    },
+    {
+      "path": "docs/readme/cards-zh.png",
+      "sha": "d4a1c376386526f01fddd84154f85f0d00168f52",
+      "size": 328885
+    },
+    {
+      "path": "docs/readme/cards.png",
+      "sha": "e17542fa66a4b919c0fd8950a7bedefcebc1ab21",
+      "size": 324322
+    },
+    {
+      "path": "docs/readme/desk.gif",
+      "sha": "be4387abb925bb41086821d86b3836b8698390cc",
+      "size": 789593
+    },
+    {
+      "path": "docs/readme/drag.gif",
+      "sha": "c3a5aa6423b9638c42b3315dfed0e6dd19c8a8c8",
+      "size": 1131073
+    },
+    {
+      "path": "docs/readme/make_images.py",
+      "sha": "85d24b4a4cdb4cb77ae60d6061d0ca5c06e6aa10",
+      "size": 11500
+    },
+    {
+      "path": "docs/readme/settings-macos.png",
+      "sha": "196beb938e0e511b597624902821d559751d2ca5",
+      "size": 141811
+    },
+    {
+      "path": "docs/readme/settings-windows.png",
+      "sha": "de7da399adceac21dcb0b34ca72e69860756fcf4",
+      "size": 14865
+    },
+    {
+      "path": "docs/readme/showcase-assets.json",
+      "sha": "2f6a67357031c28711a0cd2f53636f4142991c39",
+      "size": 1304
+    },
+    {
+      "path": "docs/readme/states-en.png",
+      "sha": "1750dd8c0803c632663f46b0bd9a23fd8336ef17",
+      "size": 472914
+    },
+    {
+      "path": "docs/readme/states-zh.png",
+      "sha": "bf16399c903be6e7c0266dac3c2168e0945b96fd",
+      "size": 475334
+    },
+    {
+      "path": "docs/readme/workbench-current.png",
+      "sha": "99ef4baa728dc93b02de416fa864154d3793d2d4",
+      "size": 96526
+    },
+    {
+      "path": "docs/readme/workbench-deep.png",
+      "sha": "4a2042722b105fd6e92d097839f03c02d2e4df3b",
+      "size": 80059
+    },
+    {
+      "path": "docs/readme/workbench-history.png",
+      "sha": "b588ac5d19f506238c0345659f189d703b3987ae",
+      "size": 71255
+    }
+  ]
+}

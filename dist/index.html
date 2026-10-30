@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#cce4ef">
+  <meta name="description" content="Yukio 雪绪，把 AI 的工作变成桌面上的小小日常。跟随 Codex、Claude Code 与 Deep Code，查看进展、及时回应，和她一起完成每一步。">
+  <meta property="og:title" content="Yukio · 桌面搭子俱乐部">
+  <meta property="og:description" content="小小一只，今天也陪着你。认识雪绪与千夏，试试她们的十二种日常动作，把新队友带回桌面。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leo-zhang-source.github.io/yukio-website/">
+  <meta property="og:image" content="https://leo-zhang-source.github.io/yukio-website/assets/yukio-held.png">
+  <meta name="twitter:card" content="summary">
+  <title>Yukio · 桌面搭子俱乐部</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preload" href="assets/motion/read_file.webp" as="image">
+  <link rel="prefetch" href="assets/motion/idle.webp" as="image">
+  <link rel="stylesheet" href="taste.css">
+  <link rel="stylesheet" href="pet-carry.css">
+  <link rel="stylesheet" href="downloads.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Yukio 首页"><img src="favicon.svg" width="29" height="29" alt=""><span>yukio<span class="wordmark-dot">.</span></span><small data-i18n="brandTagline">桌面搭子俱乐部</small></a>
+    <nav class="desktop-nav" aria-label="主导航" data-i18n-aria="navLabel">
+      <a href="#characters" data-i18n="navMeet">小伙伴</a>
+      <a href="#play" data-i18n="navPlay">小动作</a>
+      <a href="#workbench" data-i18n="navWorkbench">工作台</a>
+    </nav>
+    <div class="header-actions">
+      <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch to English">EN</button>
+      <a class="button button-small" href="#download"><span data-i18n="navDownload">下载 Yukio</span><span aria-hidden="true">↗</span></a>
+      <button id="menu-toggle" class="icon-button menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-nav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="移动端导航" hidden><a href="#characters" data-i18n="navMeet">小伙伴</a><a href="#play" data-i18n="navPlay">小动作</a><a href="#workbench" data-i18n="navWorkbench">工作台</a><a href="#download" data-i18n="downloadTitleShort">下载 Yukio</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="meet" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">yukio.</h1>
+        <p class="hero-statement" data-i18n="heroHeadline">你的桌面小搭子</p>
+        <p class="hero-description" data-i18n="heroDescription">陪你工作，也陪你发呆的<br>动漫桌面伙伴。</p>
+      </div>
+      <div class="hero-world" id="hero-world">
+        <button type="button" class="hero-pet" id="hero-pet" aria-label="点击和雪绪打招呼，拖到哪里就坐在哪里" data-i18n-aria="petLabel"><img class="hero-poster" src="assets/yukio-held.png" width="384" height="480" alt="" aria-hidden="true"><canvas id="hero-canvas" width="384" height="416" aria-hidden="true"></canvas><img id="held-pet" src="assets/yukio-held.png" alt="" width="384" height="480" hidden><span class="pet-loading" data-i18n="petLoading">雪绪正在赶来…</span></button>
+        <div class="hero-bubble" aria-live="polite"><p id="hero-status" data-i18n="heroStatus">翻书中，请稍等一下</p></div>
+      </div>
+      <div class="hero-bottom">
+        <div class="hero-actions"><a id="hero-download" class="button" href="download.html?package=mac-arm64" data-package="mac-arm64"><span data-i18n="heroDownload">下载 macOS 版</span><span aria-hidden="true">↓</span></a><a class="text-link" href="#characters" data-i18n="heroExplore">看看小伙伴</a></div>
+        <div class="hero-meta"><span class="hero-package" data-i18n="heroPackage">v5.3 · Apple 芯片 Mac · 76.5 MB</span><a href="#download" data-i18n="otherVersions">其他平台与安装说明</a></div>
+      </div>
+    </section>
+
+    <section class="characters-section section-space" id="characters" aria-labelledby="characters-title"><div class="section-inner"><div class="character-heading reveal"><h2 id="characters-title" data-i18n="charactersTitle">雪绪与千夏</h2><p data-i18n="charactersDescription">一个安静，一个轻快。你想让谁住在桌边？</p></div><div class="character-postcards"><article class="character-postcard yukio-postcard reveal"><div class="postcard-art"><img src="assets/yukio-held.png" width="250" height="313" loading="lazy" alt="白发蓝眼、深蓝制服的雪绪"></div><div class="postcard-copy"><h3 data-i18n="yukioCardName">雪绪</h3><p data-i18n="yukioCardDescription">白发蓝眼，深蓝制服。<br>读书写字，陪你慢慢来。</p><a href="#play" data-meet-character="yukio"><span data-i18n="meetYukio">和雪绪玩</span><span aria-hidden="true">↗</span></a></div></article><article class="character-postcard qianxia-postcard reveal"><div class="postcard-art"><img src="assets/qianxia-held.png" width="250" height="313" loading="lazy" alt="浅绿头发、蓝色蝴蝶结与粉色配饰的千夏"></div><div class="postcard-copy"><h3 data-i18n="qianxiaCardName">千夏</h3><p data-i18n="qianxiaCardDescription">浅绿头发，粉色小配饰。<br>给日常添一点轻快。</p><a href="#play" data-meet-character="qianxia"><span data-i18n="meetQianxia">和千夏玩</span><span aria-hidden="true">↗</span></a></div></article></div></div></section>
+
+
+    <section class="play-section section-space" id="play" aria-labelledby="play-title">
+      <div class="section-inner">
+
+        <div class="play-layout">
+          <div class="play-copy reveal"><h2 id="play-title" data-i18n="playTitle">她的小动作</h2><p class="section-description" data-i18n="playDescription">读书、写字、发呆、等你回来。选一个动作，看看桌边的小日常。</p><div id="state-list" class="state-list" role="group" aria-label="选择工作动画" data-i18n-aria="statesLabel"></div><button type="button" id="shuffle-state" class="shuffle-state" data-i18n-aria="shuffleLabel" aria-label="随机选择另一个角色动作"><span data-i18n="shuffle">随机一个小动作</span><span aria-hidden="true">↻</span></button><p class="tiny-note" data-i18n="playNote">点选上面的状态，或交给一点小小的随机。</p></div>
+          <div class="playground reveal">
+            <div class="playground-top"><div class="character-switch" role="group" aria-label="选择角色" data-i18n-aria="charactersLabel"><button type="button" class="active" data-character="yukio" aria-pressed="true"><span class="character-dot yukio-dot"></span><span data-i18n="yukioLabel">雪绪</span></button><button type="button" data-character="qianxia" aria-pressed="false"><span class="character-dot qianxia-dot"></span><span data-i18n="qianxiaLabel">千夏</span></button></div><button type="button" id="pause-toggle" class="icon-button" aria-label="暂停动画" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path class="pause-icon" d="M8 5v14M16 5v14"/><path class="play-icon" d="m8 5 11 7-11 7V5Z"/></svg></button></div>
+            <div class="playground-scene"><canvas id="play-canvas" width="384" height="416" aria-label="雪绪工作动画" role="img"></canvas><span id="animation-loading" class="animation-loading" role="status" data-i18n="animationLoading">搭子准备好啦</span></div>
+            <div class="playground-bottom"><div><span id="state-title">读文件</span></div><span id="state-number" data-i18n="actionCount">12 种日常动作</span></div><div class="animation-progress" aria-hidden="true"><span id="animation-progress"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="workbench-section section-space" id="workbench" aria-labelledby="workbench-title"><div class="section-inner"><div class="integrations section-inner"><span data-i18n="integrations">认真起来，也跟得上你的助手</span><div class="integration-names"><span><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 7-5 5 5 5m6-10 5 5-5 5m-2-14-2 18"/></svg>Codex</span><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5M8 3l8 18M3 8l18 8M3 16l18-8M8 21l8-18"/></svg>Claude Code</span><span><svg width="25" height="22" viewBox="0 0 28 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 10c2 9 15 12 20 4l3-6-6 2c-7-10-19-6-17 0Z"/><path d="m22 9 3-5M8 11h.1"/></svg>Deep Code<span class="integration-sub">by DeepSeek</span></span></div></div><div class="workbench-heading reveal"><h2 id="workbench-title" data-i18n="workbenchTitle">认真工作时</h2><div><p data-i18n="workbenchDescription">在 Mac 活动工作台里，看清 AI 正在做什么，也接得上之前的思路。</p><a class="text-link" href="https://github.com/leozhang8654/yukio-desktop-pet/blob/main/docs/activity-workbench-model-configuration.md" target="_blank" rel="noopener noreferrer"><span data-i18n="workbenchGuide">工作台使用说明</span><span aria-hidden="true">↗</span></a></div></div><div class="workbench-tabs reveal" role="tablist" aria-label="工作台视图" data-i18n-aria="workbenchTabs"><button type="button" id="tab-current" class="active" role="tab" aria-selected="true" aria-controls="workbench-panel" data-view="current" data-i18n="tabCurrent">现在做什么</button><button type="button" id="tab-deep" role="tab" aria-selected="false" aria-controls="workbench-panel" data-view="deep" tabindex="-1" data-i18n="tabDeep">深入解释</button><button type="button" id="tab-history" role="tab" aria-selected="false" aria-controls="workbench-panel" data-view="history" tabindex="-1" data-i18n="tabHistory">之前做了什么</button></div><div id="workbench-panel" role="tabpanel" aria-labelledby="tab-current" class="workbench-display reveal"><button type="button" id="enlarge-workbench" class="workbench-image-button" aria-label="放大工作台截图" data-i18n-aria="enlarge"><img id="workbench-image" src="assets/workbench-current.png" width="1400" height="900" loading="lazy" alt="Mac 活动工作台：项目、当前工作与背景说明"><span class="enlarge-icon" aria-hidden="true">↗</span></button></div><div class="workbench-caption"><p id="workbench-caption" data-i18n="captionCurrent">一眼看见当前工作、前后背景，以及这一步的目的。</p><span data-i18n="screenshotNote">真实界面截图 · 预设演示数据 · 点击可放大</span></div></div></section>
+
+    <section class="together-section section-space" aria-labelledby="together-title"><div class="section-inner"><div class="together-heading reveal"><h2 id="together-title" data-i18n="togetherTitle">陪伴，也有分寸</h2><p class="section-description" data-i18n="togetherDescription">需要你时举个牌，其余时间安静陪伴。每一个决定仍然由你来做。</p></div><div class="principles"><article class="principle reveal"><h3 data-i18n="principleOneTitle">有事，举个小牌子。</h3><p data-i18n="principleOne">问题、错误与完成提醒，优先显示。连接支持的助手后，可以在她身边回答；每次批准仍由你决定。</p><span class="principle-tag" hidden data-i18n="principleOneTag">你掌握决定权</span></article><article class="principle reveal"><h3 data-i18n="principleTwoTitle">多段聊天，理得清。</h3><p data-i18n="principleTwo">把多个助手的活动放在眼前。展开聊天卡片，切换关注对象，或回到有可用链接的那段聊天。</p><span class="principle-tag" hidden data-i18n="principleTwoTag">接得上上下文</span></article><article class="principle reveal"><h3 data-i18n="principleThreeTitle">小伙伴，也懂边界。</h3><p data-i18n="principleThree">活动监测与搜索在本机处理。可选的模型解释会把所选聊天的有限摘录发送到你配置的服务。</p><span class="principle-tag" hidden data-i18n="principleThreeTag">数据去向说清楚</span></article></div></div></section>
+
+    <section class="download-section" id="download" aria-labelledby="download-title"><div class="section-inner download-layout"><div class="download-copy reveal"><h2 id="download-title" data-i18n="downloadTitle">带回桌面</h2><p data-i18n="downloadDescription">下载 Yukio，给下一次认真工作添一个小伙伴。</p><div class="download-character"><img src="assets/yukio-held.png" width="160" height="200" alt="雪绪" loading="lazy"><span class="download-handwriting" data-i18n="downloadHandwriting">以后，请多关照。</span></div></div><div class="download-options reveal"><label for="platform-select" data-i18n="platformLabel">选择你的电脑</label><div class="select-wrap"><select id="platform-select"><option value="apple" data-i18n="platformApple">Apple 芯片 Mac</option><option value="intel" data-i18n="platformIntel">Intel Mac</option><option value="windows" data-i18n="platformWindows">Windows</option></select><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div><div class="download-version"><span id="download-version">v5.3</span><span id="download-requirement">macOS 13+ · Apple silicon</span></div><p class="download-detail" id="download-detail" data-i18n="downloadAppleDetail">桌面角色 + 内置活动工作台。<br>官网直接下载，ZIP 安装包 · 76.5 MB。</p><a id="download-link" class="button download-button" href="download.html?package=mac-arm64" data-package="mac-arm64"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg><span id="download-button-label" data-i18n="downloadApple">下载 macOS 版</span><span class="download-filetype" id="download-filetype">ZIP · 76.5 MB</span></a><div class="download-secondary"><a href="downloads/SHA256SUMS.txt" download data-i18n="allReleases">安装包校验值 ↗</a></div><p class="install-note" id="install-note" data-i18n="installApple">下载后解压 ZIP，将 Yukio.app 拖到「应用程序」。当前采用临时签名，尚未 Apple 公证；首次打开请按安装说明操作。</p><a class="install-guide" href="download.html#install"><span data-i18n="downloadInstallGuide">查看安装说明 ↗</span><span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="faq-section section-space section-inner" id="faq" aria-labelledby="faq-title"><div class="faq-heading reveal"><h2 id="faq-title" data-i18n="faqTitle">你可能想知道</h2><a class="text-link" href="https://github.com/leozhang8654/yukio-desktop-pet/issues" target="_blank" rel="noopener noreferrer"><span data-i18n="feedback">在 GitHub 提问</span><span aria-hidden="true">↗</span></a></div><div class="faq-list reveal"><details><summary><span data-i18n="faqOneQ">Yukio 本身是一个 AI 编程助手吗？</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="faqOneA">Yukio 是与你的 AI 助手协作的桌面伙伴。她跟随 Codex、Claude Code 和 Deep Code 的本机活动记录，用角色动作呈现状态；她不会代替这些助手。问题回传需要支持的来源与连接配置。</p></details><details><summary><span data-i18n="faqTwoQ">需要配置 API 密钥才能用吗？</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="faqTwoA">基础角色动画与本机活动跟随不需要配置解释模型。工作台的深入解释属于可选能力，需要配置兼容的模型服务；当前适配器支持无需 API 密钥鉴权的本机或内网 OpenAI 兼容接口。</p></details><details><summary><span data-i18n="faqThreeQ">Mac 第一次打开被系统拦截，怎么办？</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="faqThreeA">当前 Mac 包采用临时签名，尚未 Apple 公证。请从官网下载并核对下载区的 SHA-256 校验值。首次尝试打开后，可前往「系统设置 → 隐私与安全性 → 仍要打开」，按系统提示确认。</p></details><details><summary><span data-i18n="faqFourQ">Windows、Intel Mac 也能下载吗？</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="faqFourA">目前官网提供 Apple 芯片 Mac 5.3，包含桌面角色与活动工作台。Windows 版已暂停发布，Intel Mac 版暂未提供下载；请以下载区状态为准。</p></details><details><summary><span data-i18n="faqFiveQ">网页里能看到我正在运行的 AI 吗？</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="faqFiveA">这里是角色动画试玩与产品介绍，不读取你电脑上的聊天或活动记录。安装 Yukio 并选择助手来源后，桌面应用才会跟随支持的本机记录。工作台截图使用预设演示数据。</p></details></div></section>
+  </main>
+
+  <footer class="site-footer section-inner"><div class="footer-top"><a href="#" class="wordmark" aria-label="Yukio 首页"><img src="favicon.svg" width="29" height="29" alt=""><span>yukio.</span></a><p data-i18n="footerLine">小小一只，今天也陪着你。</p><div class="footer-links"><a href="https://github.com/leozhang8654/yukio-desktop-pet" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/leozhang8654/yukio-desktop-pet/blob/main/docs/README.md" target="_blank" rel="noopener noreferrer" data-i18n="docs">文档 ↗</a><a href="https://github.com/leozhang8654/yukio-desktop-pet/issues" target="_blank" rel="noopener noreferrer" data-i18n="issues">反馈 ↗</a></div></div><p class="footer-mark" aria-hidden="true">yukio.</p><div class="footer-bottom"><span>© 2026 Yukio Project</span><span data-i18n="footerMade">Small buddy. Good company.</span><a href="https://github.com/leozhang8654/yukio-desktop-pet" target="_blank" rel="noopener noreferrer" data-i18n="sourceAvailable">角色与源码来自 Yukio 项目 ↗</a></div></footer>
+  <dialog id="image-dialog" class="image-dialog" aria-label="工作台截图大图" data-i18n-aria="dialogLabel"><button id="close-dialog" type="button" class="dialog-close" aria-label="关闭大图" data-i18n-aria="closeDialog">×</button><img id="dialog-image" src="assets/workbench-current.png" alt="工作台截图"><p data-i18n="screenshotNote">真实界面截图 · 预设演示数据 · 点击可放大</p></dialog>
+  <div id="drag-layer" class="drag-layer" aria-hidden="true" hidden><div id="drag-shadow" class="drag-shadow"></div><div id="drag-puppet" class="drag-puppet"><img src="assets/yukio-held.png" width="384" height="480" alt="" draggable="false"></div></div>
+  <div id="pet-companion" class="pet-companion" role="group" aria-label="雪绪桌面伙伴" data-i18n-aria="companionLabel" hidden><div class="pet-companion-tools"><span id="pet-demo-status">动作演示 · 休息一下</span><button id="pet-demo-toggle" type="button" aria-label="暂停动作演示" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path class="pause-icon" d="M8 5v14M16 5v14"/><path class="play-icon" d="m8 5 11 7-11 7V5Z"/></svg></button><button id="pet-home" type="button" aria-label="回到首页原位" data-i18n-aria="petHome" title="回到首页原位"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m4 10 8-7 8 7M6 9v11h12V9M10 20v-6h4v6"/></svg></button></div></div>
+  <noscript><div class="noscript-note">动画试玩需要启用 JavaScript。下载安装包也需要 JavaScript。 / Enable JavaScript to try the animations and download the installer.</div></noscript>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "mac-arm64": {
+    "filename": "Yukio-5.3-macOS-arm64.zip",
+    "bytes": 76480917,
+    "sha256": "9f674e169273521b0033f0daff19a0af0ebdf0151ea45da702bdce7fd129c700",
+    "version": "5.3",
+    "platform": "macOS 13+ / Apple silicon",
+    "type": "application/zip",
+    "source": "https://github.com/leozhang8654/yukio-desktop-pet/releases/tag/v5.3",
+    "parts": [
+      {
+        "path": "mac-arm64/01.bin",
+        "bytes": 16777216,
+        "sha256": "bbe051c663931334bb63abf2cd9f366d398eddc26e212640601232b9336df059"
+      },
+      {
+        "path": "mac-arm64/02.bin",
+        "bytes": 16777216,
+        "sha256": "1d4ee32d717ee99047173593f87c6d3e8425bd4ac720b15be332743152c10e6f"
+      },
+      {
+        "path": "mac-arm64/03.bin",
+        "bytes": 16777216,
+        "sha256": "79bbc43da2988ba0198616542f08e4e498eb654ce4d45e55cf239f9250b3edae"
+      },
+      {
+        "path": "mac-arm64/04.bin",
+        "bytes": 16777216,
+        "sha256": "32693dfe0a8c1c68282465f831bf96d52e7fed7619093d6cd38833fdf5e6e0cb"
+      },
+      {
+        "path": "mac-arm64/05.bin",
+        "bytes": 9372053,
+        "sha256": "a01bd80d9533136789ec669f8aab610211a1229d472b0752fae1628c27da0190"
+      }
+    ]
+  }
+}
