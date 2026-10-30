@@ -20,7 +20,7 @@ The earlier illustrated sakura backdrop and its prompt are retained in the sourc
 
 Reference websites were inspected live: [Jellycat](https://jellycat.com/), [POP MART](https://www.popmart.com/us) and [SMISKI](https://smiski.com/e/). `DESIGN.md` records what informed this design. Their pictures, characters, logos and storefront mechanics are not reused. This remains a website for the actual desktop application, with actual release downloads.
 
-The active visual theme is `dist/taste.css`; locale-specific brand copy is in `dist/brand-copy.js`. Run `node scripts/sync-copy.mjs` after changing the brand copy to also update the initial Chinese HTML. The earlier pink theme remains in `dist/cute.css` for reference and is not loaded by the current page.
+The active visual theme is `dist/taste.css`; locale-specific brand copy is in `dist/brand-copy.js`. Run `node scripts/sync-copy.mjs` after changing the brand copy to also update the initial English HTML. The earlier pink theme remains in `dist/cute.css` for reference and is not loaded by the current page.
 
 The website is silent at the user's explicit request. Audio playback, sound controls and all sound files have been removed. Dragging, local placement, the twelve-action demo and visual interaction feedback remain available.
 
@@ -29,3 +29,5 @@ The latest swing tuning uses more angular damping, a soft angular stop around 14
 GitHub Pages publishes `dist/` using `.github/workflows/pages.yml` in the leo-zhang-source account. This site is separate from the desktop app checkout, so existing local animation work remains in place. Source and artwork attribution remain with the original Yukio project. No license is inferred from a public GitHub repository.
 
 2026-10-29 design revision uses the explicitly requested tasteskill v2 workflow: original character art becomes a collectible-character catalogue with a full-width poster hero, two character fields, a live action stage, real workbench screenshots and readable platform downloads. The former `style.css`, `cute.css` and `buddy.css` are historical styles and are not loaded. The exact direction, rationale, before/after findings and review are in `.taste-skill/`. The main page passed the actual three-width browser inspector with 0 FAIL; local browser interaction and a full installer download were tested.
+
+New visitors start in English. The language switch retains Chinese and remembers the selected language. The 2026-10-30 copy revision combines the earlier companion-focused story with the current character catalogue design.
