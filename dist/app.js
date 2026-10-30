@@ -8,8 +8,8 @@ const storage = {
   get(key, fallback) { try { return localStorage.getItem(key) ?? fallback; } catch { return fallback; } },
   set(key, value) { try { localStorage.setItem(key, value); } catch { /* Private browsers may deny storage. */ } },
 };
-let language = storage.get('yukio-language', 'zh');
-if (!['zh', 'en'].includes(language)) language = 'zh';
+let language = storage.get('yukio-language', 'en');
+if (!['zh', 'en'].includes(language)) language = 'en';
 const packageDownloads = setupPackageDownloads(language);
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 let paused = reducedMotion.matches;
@@ -20,6 +20,7 @@ let heroMessage = 'heroStatus';
 
 const messages = {
   zh: {
+    homeLabel: 'Yukio 首页', mobileNavLabel: '移动端导航', yukioArtAlt: '白发蓝眼、深蓝制服的雪绪', qianxiaArtAlt: '浅绿头发、蓝色蝴蝶结与粉色配饰的千夏', downloadArtAlt: '雪绪',
     skip: '跳到正文', navLabel: '主导航', navMeet: '遇见雪绪', navPlay: '她的日常', navWorkbench: '活动工作台', navDownload: '带她回家',
     release: 'Yukio 5.3，现已相见', heroName: '雪 绪', heroHeadline: '你的 AI 在忙，<br>她也在身边。',
     heroDescription: '把 AI 的工作，变成桌面上的小小日常。<br>看见进展，接住提醒，一起完成每一步。',
@@ -56,6 +57,7 @@ const messages = {
     greeting1: '你好呀，今天也一起加油。', greeting2: '在呢，慢慢来就好。', greeting3: '工作很认真，也要记得休息哦。', held: '欸？轻一点呀～', released: '落地啦，继续陪你工作。',
   },
   en: {
+    homeLabel: 'Yukio home', mobileNavLabel: 'Mobile navigation', yukioArtAlt: 'Yukio with white hair, blue eyes and a navy uniform', qianxiaArtAlt: 'Qianxia with mint hair, a blue bow and pink details', downloadArtAlt: 'Yukio',
     skip: 'Skip to content', navLabel: 'Main navigation', navMeet: 'Meet Yukio', navPlay: 'Her little day', navWorkbench: 'Workbench', navDownload: 'Bring her home',
     release: 'Say hello to Yukio 5.3', heroName: '雪緒', heroHeadline: 'Your AI is working.<br>She’s right beside you.',
     heroDescription: 'A little life in the corner of your desktop.<br>Follow the work, catch the moments, make progress together.', heroDownload: 'Bring her home', heroExplore: 'Meet Yukio first', heroPlatforms: 'Made for macOS · Early Windows version available',
@@ -452,6 +454,7 @@ function applyLanguage() {
   document.title = language === 'zh' ? 'Yukio · 桌面搭子俱乐部' : 'Yukio — The Desktop Buddy Club';
   $$('[data-i18n]').forEach((element) => { element.innerHTML = t(element.dataset.i18n); });
   $$('[data-i18n-aria]').forEach((element) => element.setAttribute('aria-label', t(element.dataset.i18nAria)));
+  $('[data-i18n-alt]').forEach((element) => element.alt = t(element.dataset.i18nAlt));
   $('#language-toggle').textContent = language === 'zh' ? 'EN' : '中';
   $('#language-toggle').setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换到中文');
   setHeroMessage(heroMessage);
