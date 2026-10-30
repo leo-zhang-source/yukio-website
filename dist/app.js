@@ -454,7 +454,7 @@ function applyLanguage() {
   document.title = language === 'zh' ? 'Yukio · 桌面搭子俱乐部' : 'Yukio — The Desktop Buddy Club';
   $$('[data-i18n]').forEach((element) => { element.innerHTML = t(element.dataset.i18n); });
   $$('[data-i18n-aria]').forEach((element) => element.setAttribute('aria-label', t(element.dataset.i18nAria)));
-  $('[data-i18n-alt]').forEach((element) => element.alt = t(element.dataset.i18nAlt));
+  $$('[data-i18n-alt]').forEach((element) => element.alt = t(element.dataset.i18nAlt));
   $('#language-toggle').textContent = language === 'zh' ? 'EN' : '中';
   $('#language-toggle').setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换到中文');
   setHeroMessage(heroMessage);
