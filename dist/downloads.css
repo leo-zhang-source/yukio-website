@@ -27,3 +27,6 @@
 .download-checksum{display:block;overflow-wrap:anywhere;font-family:monospace;font-size:14px;line-height:1.8;margin-top:15px;max-width:75ch} /* taste-skill-ignore: the SHA-256 value is literal code inside a code element. */
 .download-install a{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:760px){.package-progress{right:18px;bottom:18px;padding:16px 20px}.download-page-main{margin-top:36px;margin-bottom:70px}.download-page-header{padding-top:22px;padding-bottom:22px}.download-page-header>a:last-child{font-size:14px}.download-page-hero{grid-template-columns:1fr 100px;gap:14px}.download-page-hero img{width:100px;max-width:100%}.download-page-hero h1{font-size:64px}.download-page-hero h2{font-size:24px;margin-top:18px}.download-page-hero p{font-size:16px;margin-top:18px}.download-page-hero .button{font-size:16px;padding:16px 20px}.download-install{margin-top:45px;padding-top:15px}.download-install h2{font-size:28px}.download-install ol{font-size:16px;gap:18px}}
+
+.download-page-header{flex-wrap:wrap}.download-page-header>a:not(.wordmark){font-size:16px;min-height:44px;align-content:center;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.download-page-header{gap:8px 20px}.download-page-header>.wordmark{margin-right:auto}.download-page-header>a:not(.wordmark){font-size:14px}}
