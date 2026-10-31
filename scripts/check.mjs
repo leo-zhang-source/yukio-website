@@ -4,11 +4,14 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const html = readFileSync(resolve(root, 'dist/index.html'), 'utf8');
-const css = ['taste.css','pet-carry.css','downloads.css'].map((name) => readFileSync(resolve(root, 'dist', name), 'utf8')).join('\n');
+const css = ['taste.css','pet-carry.css','downloads.css','source.css'].map((name) => readFileSync(resolve(root, 'dist', name), 'utf8')).join('\n');
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]);
 if (new Set(ids).size !== ids.length) throw new Error('Duplicate HTML ids');
-for (const filename of ['index.html', 'download.html']) {
+for (const filename of ['index.html', 'download.html', 'source.html']) {
   const page = readFileSync(resolve(root, 'dist', filename), 'utf8');
+  const pageIds = [...page.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
+  if (new Set(pageIds).size !== pageIds.length) throw new Error(`Duplicate HTML ids: ${filename}`);
+  for (const match of page.matchAll(/href="#([^"]+)"/g)) if (!pageIds.includes(match[1])) throw new Error(`Missing anchor in ${filename}: ${match[1]}`);
   for (const match of page.matchAll(/(?:src|href)="([^"#]+)"/g)) {
     if (/^(https?:|data:|mailto:)/.test(match[1])) continue;
     const path = match[1].split(/[?#]/)[0];
@@ -42,4 +45,4 @@ for (const entry of Object.values(packages)) {
   }
   if (bytes !== entry.bytes || archiveHash.digest('hex') !== entry.sha256) throw new Error(`Archive differs from published release: ${entry.filename}`);
 }
-console.log(`Validated both pages, local assets, 24 animation timelines and exact installer SHA-256. Static site: ${(size(resolve(root, 'dist')) / 1048576).toFixed(2)} MiB.`);
+console.log(`Validated 3 pages, local assets, 24 animation timelines and exact installer SHA-256. Static site: ${(size(resolve(root, 'dist')) / 1048576).toFixed(2)} MiB.`);
