@@ -1,4 +1,4 @@
-import { brandCopy } from './brand-copy.js?v=20261030-hero';
+import { brandCopy } from './brand-copy.js?v=20261030-source';
 import { mountPetCarry } from './pet-carry.js';
 import { nextDemoState, demoDelay } from './pet-demo.js';
 import { setupPackageDownloads } from './package-download.js';
@@ -446,7 +446,7 @@ $('#menu-toggle').addEventListener('click', () => { setMenu(!menuOpen);  });
 $$('#mobile-nav a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && menuOpen) { setMenu(false); $('#menu-toggle').focus(); } });
 document.addEventListener('click', (event) => { if (menuOpen && !$('.site-header').contains(event.target)) setMenu(false); });
-matchMedia('(min-width: 651px)').addEventListener('change', (event) => { if (event.matches) setMenu(false); });
+matchMedia('(min-width: 1101px)').addEventListener('change', (event) => { if (event.matches) setMenu(false); });
 
 function applyLanguage() {
   packageDownloads.setLanguage(language);
