@@ -31,3 +31,11 @@ GitHub Pages publishes `dist/` using `.github/workflows/pages.yml` in the leo-zh
 2026-10-29 design revision uses the explicitly requested tasteskill v2 workflow: original character art becomes a collectible-character catalogue with a full-width poster hero, two character fields, a live action stage, real workbench screenshots and readable platform downloads. The former `style.css`, `cute.css` and `buddy.css` are historical styles and are not loaded. The exact direction, rationale, before/after findings and review are in `.taste-skill/`. The main page passed the actual three-width browser inspector with 0 FAIL; local browser interaction and a full installer download were tested.
 
 New visitors start in English. The language switch retains Chinese and remembers the selected language. The 2026-10-30 copy revision combines the earlier companion-focused story with the current character catalogue design.
+
+## Source code guide
+
+The bilingual [`source.html`](dist/source.html) page includes a project overview, features, a file guide, local setup and checks. The header, mobile menu, footer and download page link to it. Download the latest public website source directly from [GitHub as a ZIP](https://codeload.github.com/leo-zhang-source/yukio-website/zip/refs/heads/main), or clone `https://github.com/leo-zhang-source/yukio-website.git`. The ZIP includes the website, its assets and installer files. It does not include the desktop application's source. The original desktop repository currently returns 404 to anonymous visitors (checked 2026-10-30); this website does not republish a private application checkout.
+
+With Python 3, run `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist`. With Node.js 20+, run `npm run check`, `npm run test:physics` and `npm run test:demo`. No npm install or build step is needed.
+
+The repository currently has no project license; public access is not a license grant. Character artwork remains attributed to the Yukio project. Included font licenses remain in `dist/assets/`.
