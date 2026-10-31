@@ -6,7 +6,7 @@
   "description": "The Yukio desktop companion website",
   "scripts": {
     "dev": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
-    "check": "node --check dist/app.js && node --check dist/package-download.js && node --check dist/download-page.js && node scripts/check.mjs",
+    "check": "node --check dist/app.js && node --check dist/package-download.js && node --check dist/download-page.js && node --check dist/source-page.js && node scripts/check.mjs",
     "test:physics": "node --test scripts/test-pet-physics.mjs",
     "test:demo": "node --test scripts/test-pet-demo.mjs"
   }
