@@ -403,7 +403,7 @@ imageDialog.addEventListener('close', () => { document.body.style.overflow = '';
 
 const platforms = {
   apple: { available: true, version: 'v5.3', requirement: 'macOS 13+ · Apple silicon', type: 'ZIP · 76.5 MB', label: 'downloadApple', detail: 'downloadAppleDetail', install: 'installApple' },
-  intel: { available: false, version: 'downloadUnavailable', requirement: 'Intel Mac', type: '', detail: 'downloadIntelDetail', install: 'installUnavailable' },
+  intel: { available: true, version: 'v0.4.6', requirement: 'Intel Mac · historical release', type: 'DMG', label: 'downloadApple', detail: 'downloadIntelDetail', install: 'installIntel', url: 'https://github.com/leo-zhang-source/yukio-desktop-pet/releases/download/v0.4.6/Yukio-0.4.6-macOS.dmg' },
   windows: { available: false, version: 'downloadPaused', requirement: 'Windows', type: '', detail: 'downloadWindowsDetail', install: 'installUnavailable' },
 };
 const initialPlatform = storage.get('yukio-platform', /Windows/i.test(navigator.userAgent) ? 'windows' : 'apple');
@@ -417,8 +417,9 @@ function updateDownload() {
   link.classList.toggle('is-unavailable', !data.available);
   link.setAttribute('aria-disabled', String(!data.available));
   if (data.available) {
-    link.href = `download.html?package=mac-arm64&lang=${language}`;
-    link.dataset.package = 'mac-arm64';
+    link.href = data.url ?? `download.html?package=mac-arm64&lang=${language}`;
+    if (data.url) delete link.dataset.package;
+    else link.dataset.package = 'mac-arm64';
     link.removeAttribute('tabindex');
   } else {
     link.removeAttribute('href');
@@ -431,7 +432,12 @@ function updateDownload() {
   $('#download-detail').innerHTML = t(data.detail);
   $('#install-note').textContent = t(data.install);
   $('.install-guide span:first-child').textContent = t('downloadInstallGuide');
-  $('.install-guide').href = `download.html?lang=${language}#install`;
+  const releasePage = 'https://github.com/leo-zhang-source/yukio-desktop-pet/releases/tag/v0.4.6';
+  $('.install-guide').href = data.url ? releasePage : `download.html?lang=${language}#install`;
+  const checksums = $('.download-secondary a');
+  checksums.href = data.url ? releasePage : 'downloads/SHA256SUMS.txt';
+  if (data.url) checksums.removeAttribute('download');
+  else checksums.setAttribute('download', '');
 }
 $('#platform-select').addEventListener('change', () => { storage.set('yukio-platform', $('#platform-select').value); updateDownload();  });
 
