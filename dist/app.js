@@ -1,4 +1,4 @@
-import { brandCopy } from './brand-copy.js';
+import { brandCopy } from './brand-copy.js?v=20261030-hero';
 import { mountPetCarry } from './pet-carry.js';
 import { nextDemoState, demoDelay } from './pet-demo.js';
 import { setupPackageDownloads } from './package-download.js';
