@@ -1,6 +1,6 @@
 export const brandCopy = {
   zh: {
-    brandTagline: '桌面搭子俱乐部', navMeet: '小伙伴', navPlay: '小动作', navWorkbench: '工作台', navDownload: '下载 Yukio',
+    brandTagline: '桌面搭子俱乐部', navMeet: '小伙伴', navPlay: '小动作', navWorkbench: '工作台', navSource: '源码说明', navDownload: '下载 Yukio',
     announcement: '小小一只，今天也陪着你。',
     release: 'Yukio 5.3', heroName: '雪 绪', heroHeadline: '你的桌面小搭子',
     heroDescription: '忙工作，或发呆，<br>雪绪一直在。<br>翻翻书，写两行，<br>静静陪在你身旁。', heroDownload: '下载 macOS 版', heroExplore: '看看小伙伴',
@@ -28,7 +28,7 @@ export const brandCopy = {
     platformLabel: '选择你的电脑', faqTitle: '你可能想知道', feedback: '在 GitHub 提问', footerLine: '工作有进展，桌面有陪伴。今天也一起慢慢来。', footerMade: 'Small buddy. Good company.',
   },
   en: {
-    brandTagline: 'the desktop buddy club', navMeet: 'Buddies', navPlay: 'Daily moves', navWorkbench: 'Workbench', navDownload: 'Get Yukio',
+    brandTagline: 'the desktop buddy club', navMeet: 'Buddies', navPlay: 'Daily moves', navWorkbench: 'Workbench', navSource: 'Source code', navDownload: 'Get Yukio',
     announcement: 'Small buddy. Good company. Every day.',
     release: 'Yukio 5.3', heroHeadline: 'Your desktop buddy',
     heroDescription: 'Work or play, night or day,<br>Yukio’s here to stay.<br>She reads, writes, and waits for you,<br>A little friend to see you through.', heroDownload: 'Download for Mac', heroExplore: 'The buddies', heroPlatforms: 'A desktop companion for you and your AI tools',
