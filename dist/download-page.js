@@ -4,7 +4,7 @@ let storedLanguage;
 try { storedLanguage = localStorage.getItem('yukio-language'); } catch { /* Optional preference. */ }
 const language = (query.get('lang') ?? storedLanguage) === 'zh' ? 'zh' : 'en';
 const english = {
-  back: 'Back to Yukio ↗', title: 'Your buddy is ready to go.',
+  source: 'Source code ↗', back: 'Back to Yukio ↗', title: 'Your buddy is ready to go.',
   description: 'Yukio 5.3 · macOS 13+ · Apple silicon<br>ZIP installer · 76.5 MB',
   download: 'Download for Mac ↓', note: 'Download from this website. No sign-in needed.',
   installTitle: 'A little place on your desktop.',
@@ -15,6 +15,7 @@ const english = {
   checksum: 'Original published archive · SHA-256 checksum', checksumDownload: 'Download checksums ↗',
 };
 const chinese = {
+  "source": "源码说明 ↗",
   "back": "返回官网 ↗",
   "title": "小搭子，准备出发。",
   "description": "Yukio 5.3 · macOS 13+ · Apple 芯片<br>ZIP 安装包 · 76.5 MB",
