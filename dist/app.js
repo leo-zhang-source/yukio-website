@@ -1,4 +1,4 @@
-import { brandCopy } from './brand-copy.js?v=20261031-migration';
+import { brandCopy } from './brand-copy.js?v=20261031-clean';
 import { mountPetCarry } from './pet-carry.js';
 import { nextDemoState, demoDelay } from './pet-demo.js';
 import { setupPackageDownloads } from './package-download.js';
@@ -79,8 +79,8 @@ Object.assign(messages.zh, brandCopy.zh);
 Object.assign(messages.en, brandCopy.en);
 const t = (key) => messages[language][key] ?? messages.zh[key] ?? key;
 const states = [
-  ['thinking', '思考', 'Thinking'], ['read_file', '读文件', 'Reading'], ['write_file', '写代码', 'Writing'], ['view_image', '看图片', 'Looking'],
-  ['verify', '跑测试', 'Testing'], ['read_web', '浏览网页', 'Browsing'], ['respond', '整理回答', 'Responding'], ['question_for_user', '等待你', 'Waiting'],
+  ['thinking', '思考', 'Thinking'], ['read_file', '读文件', 'Reading'], ['write_file', '写写字', 'Writing'], ['view_image', '看图片', 'Looking'],
+  ['verify', '检查一下', 'Checking'], ['read_web', '浏览网页', 'Browsing'], ['respond', '整理回答', 'Responding'], ['question_for_user', '等待你', 'Waiting'],
   ['task_complete', '完成啦', 'All done'], ['default_work', '日常工作', 'Working'], ['idle', '休息一下', 'A little rest'], ['failed', '遇到问题', 'A problem'],
 ];
 const stateName = (id) => states.find((s) => s[0] === id)?.[language === 'zh' ? 1 : 2] ?? id;
@@ -403,7 +403,7 @@ imageDialog.addEventListener('close', () => { document.body.style.overflow = '';
 
 const platforms = {
   apple: { available: true, version: 'v5.3', requirement: 'macOS 13+ · Apple silicon', type: 'ZIP · 76.5 MB', label: 'downloadApple', detail: 'downloadAppleDetail', install: 'installApple' },
-  intel: { available: true, version: 'v0.4.6', requirement: 'Intel Mac · historical release', type: 'DMG', label: 'downloadApple', detail: 'downloadIntelDetail', install: 'installIntel', url: 'https://github.com/leo-zhang-source/yukio-desktop-pet/releases/download/v0.4.6/Yukio-0.4.6-macOS.dmg' },
+  intel: { available: true, version: 'v0.4.6', requirement: 'Intel Mac', type: 'DMG', label: 'downloadApple', detail: 'downloadIntelDetail', install: 'installIntel', url: 'https://github.com/leo-zhang-source/yukio-desktop-pet/releases/download/v0.4.6/Yukio-0.4.6-macOS.dmg' },
   windows: { available: false, version: 'downloadPaused', requirement: 'Windows', type: '', detail: 'downloadWindowsDetail', install: 'installUnavailable' },
 };
 const initialPlatform = storage.get('yukio-platform', /Windows/i.test(navigator.userAgent) ? 'windows' : 'apple');
